@@ -3,6 +3,11 @@
 ## Overview
 A multilingual Retrieval-Augmented Generation (RAG) system built with Gradio that allows users to upload PDF documents and interact with them through natural language queries in both English and Bengali. The system uses Together AI's Qwen model to provide contextually relevant answers based on the uploaded document content.
 
+## 🚀 Live Demo
+**Try it now**: [https://huggingface.co/spaces/sairika/multilingual-rag-system](https://huggingface.co/spaces/sairika/multilingual-rag-system)
+
+The application is deployed on Hugging Face Spaces and can be accessed directly through your browser. No installation required!
+
 ## Features
 - **Multilingual Support**: Handles queries in both English and Bengali
 - **PDF Text Extraction**: Uses PyPDF2 for robust text extraction from PDF documents
@@ -12,6 +17,13 @@ A multilingual Retrieval-Augmented Generation (RAG) system built with Gradio tha
 - **API Key Validation**: Built-in validation for Together AI API keys
 
 ## Setup Guide
+
+### Option 1: Use the Live Demo (Recommended)
+Simply visit: [https://huggingface.co/spaces/sairika/multilingual-rag-system](https://huggingface.co/spaces/sairika/multilingual-rag-system)
+
+No installation required! Just bring your Together AI API key and start uploading PDFs.
+
+### Option 2: Local Development
 
 ### Prerequisites
 - Python 3.7 or higher
@@ -32,6 +44,7 @@ A multilingual Retrieval-Augmented Generation (RAG) system built with Gradio tha
 3. **Access the interface**
    - The app will launch with a shareable Gradio link
    - Open the provided URL in your browser
+   - Or visit the live demo at: https://huggingface.co/spaces/sairika/multilingual-rag-system
 
 ## Tools, Libraries & Packages Used
 
@@ -198,13 +211,18 @@ def validate_api_key(api_key):
 
 ## Usage Instructions
 
-1. **Enter API Key**: Input your Together AI API key in the password field
-2. **Upload PDF**: Click "Upload PDF" and select your document
-3. **Process Document**: Click "Process PDF" button to extract text
-4. **Wait for Confirmation**: Look for the "✅ Successfully processed PDF" message
-5. **Start Asking Questions**: Type your questions in English or Bengali
-6. **Submit**: Click "Submit Question" or press Enter
-7. **Continue Conversation**: The system remembers previous questions in the session
+### Using the Live Demo
+1. **Visit**: Go to [https://huggingface.co/spaces/sairika/multilingual-rag-system](https://huggingface.co/spaces/sairika/multilingual-rag-system)
+2. **Enter API Key**: Input your Together AI API key in the password field
+3. **Upload PDF**: Click "Upload PDF" and select your document  
+4. **Process Document**: Click "Process PDF" button to extract text
+5. **Wait for Confirmation**: Look for the "✅ Successfully processed PDF" message
+6. **Start Asking Questions**: Type your questions in English or Bengali
+7. **Submit**: Click "Submit Question" or press Enter
+8. **Continue Conversation**: The system remembers previous questions in the session
+
+### Local Development
+Follow the same steps after running the application locally with `python app.py`
 
 ## System Architecture
 
@@ -231,12 +249,18 @@ Response Generation → Chat Interface
 - Multi-document support
 - Formal evaluation metrics implementation
 
-## Contributing
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Create a Pull Request
+## Deployment
+
+### Hugging Face Spaces
+The application is deployed on Hugging Face Spaces using:
+- **Framework**: Gradio
+- **Python Version**: 3.9+
+- **Deployment**: Automatic from repository
+- **Access**: Public, requires user's own Together AI API key
+- **Live URL**: https://huggingface.co/spaces/sairika/multilingual-rag-system
+
+### Local Deployment
+For local development and testing, follow the installation steps above.
 
 ## License
 This project is open source and available under the MIT License.
